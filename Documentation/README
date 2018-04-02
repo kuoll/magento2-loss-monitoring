@@ -1,0 +1,6 @@
+
+
+```
+rm ../../build/Kuoll-LossMonitoring.zip
+zip -r -X ../../build/Kuoll-LossMonitoring.zip ../*
+```
