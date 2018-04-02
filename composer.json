@@ -17,7 +17,7 @@
         "Kuoll\\LossMonitoring\\": ""
       },
       "repositories": {
-        "kuoll-loss-monitoring-m2": {
+        "magento2-loss-monitoring": {
             "type": "git",
             "url": "https://github.com/kuoll/magento2-loss-monitoring.git"
         }

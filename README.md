@@ -16,9 +16,11 @@ composer --version
 ### Add repository, fetch module and install it to Magento
 
 ```
+cd /path/to/your/magento/root
+
 composer config repositories.kuoll-loss-monitoring-m2 git "https://github.com/kuoll/magento2-loss-monitoring.git"
 
-composer require kuoll/magento2-loss-monitoring
+composer require kuoll/loss-monitoring:dev-master
 
 bin/magento module:enable Kuoll_LossMonitoring
 
