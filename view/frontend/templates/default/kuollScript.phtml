@@ -1,0 +1,17 @@
+<?php if ("" != $this->getApiKey()): ?>
+
+<script>
+(function (w, k, t){if (!window.Promise){w[k]=w[k]||function(){};return;}w[k] = w[k] || function () {var a = arguments;return new Promise(function (y, n) {(w[k].q = w[k].q || []).push({a: a, d: {y: y, n: n}});});};var s = document.createElement(t),f = document.getElementsByTagName(t)[0];s.async = 1;s.src = 'https://cdn.kuoll.com/bootloader.js';f.parentNode.insertBefore(s, f);}(window, 'kuoll', 'script'));
+var apiKey = window.kuollApiKey = "<?= $this->getApiKey() ?>";
+kuoll('startRecord', { API_KEY: "<?= $this->getApiKey() ?>", userId: 1});
+</script>
+
+<?php else: ?>
+
+<!-- 
+    Kuoll API key is missing and Kuoll API is not enabled. 
+    Please, provide Kuoll API key in your store Magento admin panel 
+    to enable loss monitoring.
+-->
+
+<?php endif ?>

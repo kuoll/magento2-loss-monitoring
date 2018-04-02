@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="kuoll" translate="label" sortOrder="10">
+            <label>Kuoll</label>
+        </tab>
+        <section id="Kuoll_LossMonitoring" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Loss Monitoring</label>
+            <tab>kuoll</tab>
+            <resource>Kuoll_LossMonitoring::kuoll_lossMonitoring</resource>
+            <group id="settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>Integration Settings</label>
+                <field id="apiKey" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Kuoll API key</label>
+                    <comment><![CDATA[This API key will be used to store data in your private account.]]></comment>
+                </field>
+                <comment>
+                    <![CDATA[Please, <a href="https://app.kuoll.com/signup?redirectTo=/magento2" title="Create Kuoll account">create Kuoll account</a> and provide Kuoll API key to get JavaScript
+                        and XmlHttpRequest error losses report. ]]>
+                </comment>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,26 @@
+{
+    "name": "kuoll/loss-monitoring",
+    "description": "Kuoll Loss Monitoring Module for Magento 2.x",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+      "APACHE-2.0"
+    ],
+    "require": {
+      "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0",
+      "magento/module-config": ">=100.0.0",
+      "magento/framework": ">=100.0.0"
+    },
+    "autoload": {
+      "files": [ "registration.php" ],
+      "psr-4": {
+        "Kuoll\\LossMonitoring\\": ""
+      },
+      "repositories": {
+        "kuoll-loss": {
+            "type": "git",
+            "url": "https://github.com/kuoll/magento2-loss-monitoring.git"
+        }
+      }
+    }
+  }
