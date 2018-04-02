@@ -18,7 +18,7 @@ composer --version
 ```
 composer config repositories.kuoll-loss-monitoring-m2 git "https://github.com/kuoll/magento2-loss-monitoring.git"
 
-composer require kuoll/kuoll-loss-monitoring-m2
+composer require kuoll/magento2-loss-monitoring
 
 bin/magento module:enable Kuoll_LossMonitoring
 
