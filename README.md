@@ -13,7 +13,7 @@ git --version
 composer --version
 ```
 
-### Add repository, fetch module and install it to Magento
+### Add repository, fetch and install module
 
 ```
 cd /path/to/your/magento/root
@@ -29,8 +29,35 @@ bin/magento setup:upgrade
 bin/magento cache:clean
 ```
 
+## Development
 
+### Copy / clone module content
+Make sure this git repository content is located
+```
+app/code/Kuoll/LossMonitoring/
+```
 
+*NOT* ~~`app/code/Kuoll/magento2-loss-monitoring/`~~
 
+So that you have `app/code/Kuoll/LossMonitoring/composer.json` in your `magento2` dir.
+
+### Before start
+Set dev mode
+```
+magento deploy:mode:set developer
+```
+
+Enable module 
+```
+bin/magento module:enable Kuoll_LossMonitoring
+``` 
+
+When in troubles, do
+```
+php bin/magento maintenance:disable
+php bin/magento cache:clean
+```
+
+### For more information about Kuoll
 
 https://www.kuoll.com/
